@@ -345,6 +345,11 @@ a.btn:active {
     background-color: #1D976C;
     border-radius: .5em;
     color: white;
+    transition: .3s;
+}
+
+.input button:hover {
+    background-color: #33f1af;
 }
 
 .display {

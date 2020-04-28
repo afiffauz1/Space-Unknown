@@ -138,7 +138,7 @@ table {
     font-size: 1em;
     overflow-x: hidden;
     box-sizing: border-box;
-    background: linear-gradient(90deg, #FC5C7D, #6A82FB);
+    background: linear-gradient(90deg, #304352, #d7d2cc);
 }
 
 .btn-back {
@@ -151,12 +151,17 @@ table {
     text-decoration: none;
     justify-content: center;
     align-items: center;
-    color: black;
-    background-color: #FDC830;
+    color: white;
+    background-color: #f7797d;
     border-radius: .5em;
+    transition: .3s;
 }
 
-.container {
+a.btn-back:hover {
+    background-color: #fd9295;
+}
+
+main {
     display: flex;
     flex-direction: column;
     margin: 20px 50px;
