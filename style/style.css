@@ -416,6 +416,14 @@ a.btn:active {
     transform: scale(1.4) translateX(17px);
 }
 
+footer {
+    padding: 1.2em;
+    text-align: center;
+    font-size: .8rem;
+    background-color: #2b3d4f;
+    color: white;
+}
+
 
 @media screen and (max-width: 900px) {
     header nav ul {
