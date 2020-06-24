@@ -5,148 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Unknown</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Prata&family=Raleway:ital,wght@0,400;0,600;1,400;1,600&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 </head>
 
 <body>
     <header>
-        <nav>
-            <h1>Space Unknown</h1>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-                <li><a href="/about.html">About</a></li>
-            </ul>
+        <div class="navbar-fixed">
+            <nav class="grey darken-4" role="navigation">
+                <div class="nav-wrapper container">
+                    <span class="brand-logo">Space Unknown</span>
+                    <a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
 
-            <div class="menu-toggle">
-                <input type="checkbox">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
+                    <ul class="topnav right hide-on-med-and-down"></ul>
+                    <ul class="sidenav" id="nav-mobile"></ul>
+                </div>
+            </nav>
+        </div>
     </header>
     <div class="container">
-        <main>
-            <article class="card">
-                <img src="img/matahari.jpg" alt="Matahari">
-                <section class="detail">
-                    <h2>Matahari</h2>
-                    <a href="detail/matahari.html" class="btn">Lihat Detail</a>
-                </section>
-            </article>
-            <article class="card">
-                <img src="img/mercury.jpg" alt="Merkurius">
-                <section class="detail">
-                    <h2>Merkurius</h2>
-                    <p><strong>Jarak ke Matahari:<br></strong>+- 0.000005571 Tahun Cahaya</p>
-                    <a href="detail/merkurius.html" class="btn">Lihat Detail</a>
-                </section>
-            </article>
-            <article class="card">
-                <img src="img/venus.jpg" alt="Venus">
-                <section class="detail">
-                    <h2>Venus</h2>
-                    <p><strong>Jarak ke Matahari:<br></strong>+- 0.0000114 Tahun Cahaya</p>
-                    <a href="detail/venus.html" class="btn">Lihat Detail</a>
-                </section>
-            </article>
-            <article class="card">
-                <img src="img/bumi.jpg" alt="Bumi">
-                <section class="detail">
-                    <h2>Bumi</h2>
-                    <p><strong>Jarak ke Matahari:<br></strong>+- 0.000015916 Tahun Cahaya</p>
-                    <a href="detail/bumi.html" class="btn">Lihat Detail</a>
-                </section>
-            </article>
-            <article class="card">
-                <img src="img/mars.jpg" alt="Mars">
-                <section class="detail">
-                    <h2>Mars</h2>
-                    <p><strong>Jarak ke Matahari:<br></strong>+- 0.000022969 Tahun Cahaya</p>
-                    <a href="detail/mars.html" class="btn">Lihat Detail</a>
-                </section>
-            </article>
-            <article class="card">
-                <img src="img/jupiter.jpg" alt="Jupiter">
-                <section class="detail">
-                    <h2>Jupiter</h2>
-                    <p><strong>Jarak ke Matahari:<br></strong>+- 0.000082028 Tahun Cahaya</p>
-                    <a href="detail/jupiter.html" class="btn">Lihat Detail</a>
-                </section>
-            </article>
-            <article class="card">
-                <img src="img/saturn.jpg" alt="Saturnus">
-                <section class="detail">
-                    <h2>Saturnus</h2>
-                    <p><strong>Jarak ke Matahari:<br></strong>+- 0.00015817 Tahun Cahaya</p>
-                    <a href="detail/saturnus.html" class="btn">Lihat Detail</a>
-                </section>
-            </article>
-            <article class="card">
-                <img src="img/neptune.jpg" alt="Neptunus">
-                <section class="detail">
-                    <h2>Neptunus</h2>
-                    <p><strong>Jarak ke Matahari:<br></strong>+- 0.0004732 Tahun Cahaya</p>
-                    <a href="detail/neptunus.html" class="btn">Lihat Detail</a>
-                </section>
-            </article>
-            <article class="card">
-                <img src="img/uranus.jpg" alt="Uranus">
-                <section class="detail">
-                    <h2>Uranus</h2>
-                    <p><strong>Jarak ke Matahari:<br></strong>+- 0.00031315 Tahun Cahaya</p>
-                    <a href="detail/uranus.html" class="btn">Lihat Detail</a>
-                </section>
-            </article>
+        <main id="content">
+            <div class="row"></div>
         </main>
-
-        <aside>
-            <article class="konverter">
-                <h3>Ubah Tahun Cahaya Ke Kilometer</h3>
-                <section class="input">
-                    <input type="text" id="nilai-awal" placeholder="Masukkan angka">
-                    <button id="konversi">Konversi</button>
-                </section>
-                <section class="display"></section>
-            </article>
-            <article class="about-me">
-                <h3>About Me</h3>
-                <section class="profile">
-                    <img src="/img/profil.jpg" alt="Muhammad Afif Fauzi">
-                </section>
-                <table>
-                    <tr>
-                        <th>Nama</th>
-                        <td>:</td>
-                        <td>Muhammad Afif Fauzi</td>
-                    </tr>
-                    <tr>
-                        <th>Tempat Lahir</th>
-                        <td>:</td>
-                        <td>Sidoarjo</td>
-                    </tr>
-                    <tr>
-                        <th>Tanggal Lahir</th>
-                        <td>:</td>
-                        <td>28 Desember 1995</td>
-                    </tr>
-                </table>
-                <p>
-                    “ Dream bigger. Do bigger.”
-                </p>
-            </article>
-        </aside>
     </div>
-
-    <footer>
-        <p>Space Unknown &copy; 2020 Muhammad Afif Fauzi</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="./js/navigation.js"></script>
 </body>
 
 </html>
