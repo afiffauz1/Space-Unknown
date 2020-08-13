@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Unknown</title>
+    <link rel="shortcut icon" href="/su_logo.png">
+    <link rel="apple-touch-icon" href="/su_logo.png">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
     <header>
-        <div class="navbar-fixed">
+        <div>
             <nav class="grey darken-4" role="navigation">
                 <div class="nav-wrapper container">
                     <span class="brand-logo">Space Unknown</span>
@@ -27,8 +31,9 @@
             <div class="row"></div>
         </main>
     </div>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script src="./js/navigation.js"></script>
+    <script type="text/javascript" src="./js/materialize.min.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./sw-register.js"></script>
 </body>
 
 </html>

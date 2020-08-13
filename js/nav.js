@@ -4,14 +4,14 @@ document.addEventListener("DOMContentLoaded", function () {
     loadNavBar();
 
     let page = window.location.hash.substr(1);
-    if (page == "") page = "home";
+    if (page === "") page = "home";
     loadPage(page);
 
     function loadNavBar() {
         const xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
-            if (this.readyState == 4) {
-                if (this.status != 200) return;
+            if (this.readyState === 4) {
+                if (this.status !== 200) return;
 
                 document.querySelectorAll(".topnav , .sidenav").forEach(element => {
                     element.innerHTML = xhttp.responseText;
@@ -29,18 +29,18 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
-        xhttp.open("GET", "./components/navigation.html", true);
+        xhttp.open("GET", "./nav.html", true);
         xhttp.send();
     }
 
     function loadPage(page) {
         const xhttp = new XMLHttpRequest;
         xhttp.onreadystatechange = function () {
-            if (this.readyState == 4) {
+            if (this.readyState === 4) {
                 const content = document.querySelector(".row");
-                if (this.status == 200) {
+                if (this.status === 200) {
                     content.innerHTML = xhttp.responseText;
-                } else if (this.status == 400) {
+                } else if (this.status === 400) {
                     content.innerHTML = `<h2 class="center">Halaman tidak ditemukan</h2>`
                 } else {
                     content.innerHTML = `<h2 className="center">Oops.. halaman tidak dapat diakses</h2>`
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
             })
         }
 
-        xhttp.open("GET", `pages/${page}.html`, true);
+        xhttp.open("GET", `./pages/${page}.html`, true);
         xhttp.send();
 
     }
@@ -63,11 +63,11 @@ document.addEventListener("DOMContentLoaded", function () {
     function loadDetail(href) {
         const xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
-            if (this.readyState == 4) {
+            if (this.readyState === 4) {
                 const content = document.querySelector(".row");
-                if (this.status == 200) {
+                if (this.status === 200) {
                     content.innerHTML = xhttp.responseText;
-                } else if (this.status == 400) {
+                } else if (this.status === 400) {
                     content.innerHTML = `<h2 class="center">Halaman tidak ditemukan</h2>`
                 } else {
                     content.innerHTML = `<h2 className="center">Oops.. halaman tidak dapat diakses</h2>`
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
-        xhttp.open("GET", `detail/${href}.html`, true);
+        xhttp.open("GET", `./detail/${href}.html`, true);
         xhttp.send();
     }
 
